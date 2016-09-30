@@ -6,10 +6,14 @@ import {Home} from "./components/Home";
 
 class App extends React.Component {
   render() {
+    var user = {
+      name: "luke",
+      hobbies: ["table tennis", "basketball"]
+    };
     return (
       <div>
         <Header/>
-        <Home/>
+        <Home name={"luke"} age={31} user={user}/>
       </div>
     );
   }
